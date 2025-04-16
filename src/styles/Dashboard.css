@@ -1,0 +1,19 @@
+.dashboard-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.inner-content {
+  padding: 5px;
+  background-color: #3498db;
+  overflow: auto;
+  height: 500px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}

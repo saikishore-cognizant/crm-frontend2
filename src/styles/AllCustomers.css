@@ -1,0 +1,21 @@
+.all-customers-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .customer-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .customer-name {
+    cursor: pointer;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .customer-name:hover {
+    color: #3498db;
+  }
+  

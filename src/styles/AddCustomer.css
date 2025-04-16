@@ -1,0 +1,36 @@
+.add-customer-container {
+  padding: 20px;
+  background-color: #1c1c1c; /* Dark background */
+  border: 1px solid #444; /* Dark border */
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-customer-container h1 {
+  color: #9b59b6; /* Dark purple */
+}
+
+.add-customer-container input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #444; /* Dark border */
+  border-radius: 5px;
+  background-color: #333; /* Dark input background */
+  color: #ecf0f1; /* Light text color */
+}
+
+.add-customer-container button {
+  padding: 10px;
+  background-color: #9b59b6; /* Dark purple */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #9b59b6; /* Glowing effect */
+}
+
+.add-customer-container button:hover {
+  background-color: #8e44ad; /* Darker purple */
+  box-shadow: 0 0 20px #9b59b6; /* Stronger glowing effect */
+}

@@ -1,0 +1,43 @@
+/* styles.css */
+.customer-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .customer-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .customer-info {
+    margin-bottom: 15px;
+  }
+  
+  .customer-info span {
+    font-weight: bold;
+  }
+  
+  .sales-opportunities, .support-tickets {
+    margin-top: 20px;
+  }
+  
+  .sales-opportunities ul, .support-tickets ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sales-opportunities li, .support-tickets li {
+    background-color: #e0f7fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .sales-opportunities li span, .support-tickets li span {
+    font-weight: bold;
+  }  
