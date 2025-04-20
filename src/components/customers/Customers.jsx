@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
-import '../../styles/Customer.css';
+import '../../styles/customers/Customer.css';
 
 const Customers = ({ id }) => {
   const [customer, setCustomer] = useState(null);

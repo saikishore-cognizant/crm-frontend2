@@ -1,0 +1,35 @@
+/* AddReport.css */
+.add-report-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .add-report-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .add-report-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-report-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-report-container button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-report-container button:hover {
+    background-color: #0056b3;
+  }
+  

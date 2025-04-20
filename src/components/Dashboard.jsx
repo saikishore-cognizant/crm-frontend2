@@ -5,6 +5,8 @@ import About from './About';
 import Navbar from './Navbar';
 import Sales from './sales/Sales';
 import Tickets from './tickets/Tickets';
+import Campaigns from './campaigns/Campaigns';
+import Reports from './reports/Reports';
 
 const Dashboard = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -23,8 +25,8 @@ const Dashboard = () => {
             {activeSection === 'AllCustomers' && <AllCustomers />}
             {activeSection === 'Sales' && <div><Sales/> </div>}
             {activeSection === 'Tickets' && <div><Tickets/></div>}
-            {activeSection === 'Campaigns' && <div>Campaigns Section</div>}
-            {activeSection === 'Reports' && <div>Reports Section</div>}
+            {activeSection === 'Campaigns' && <div><Campaigns/></div>}
+            {activeSection === 'Reports' && <div><Reports/></div>}
             {!activeSection && <About />}
           </div>
         </div>
