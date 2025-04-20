@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
-import '../styles/AddCustomer.css';
+import '../../styles/AddCustomer.css';
 
 const AddCustomer = () => {
   const [formData, setFormData] = useState({

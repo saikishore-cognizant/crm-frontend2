@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Signup from './components/Signup';
 import Login from './components/Login';
-import Customers from './components/Customers';
+import Customers from './components/customers/Customers';
 import Dashboard from './components/Dashboard';
-import AllCustomers from './components/AllCustomers';
-import AddCustomer from './components/AddCustomer';
+import AllCustomers from './components/customers/AllCustomers';
+import AddCustomer from './components/customers/AddCustomer';
 
 import Form from './components/Form';
 import './App.css';

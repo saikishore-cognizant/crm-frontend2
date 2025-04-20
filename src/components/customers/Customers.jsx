@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
-import '../styles/Customer.css';
+import '../../styles/Customer.css';
 
 const Customers = ({ id }) => {
   const [customer, setCustomer] = useState(null);
@@ -83,31 +83,48 @@ const Customers = ({ id }) => {
     <div className="customer-container">
       {isEditing ? (
         <div>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="contactInfo"
-            value={formData.contactInfo}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="purchaseHistory"
-            value={formData.purchaseHistory}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="segmentationData"
-            value={formData.segmentationData}
-            onChange={handleChange}
-          />
-          <button onClick={handleSaveClick}>Save</button>
+          <div className="customer-header">Edit Customer</div>
+          <div className="customer-info">
+            <span>Name:</span>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="customer-input"
+            />
+          </div>
+          <div className="customer-info">
+            <span>Contact Info:</span>
+            <input
+              type="text"
+              name="contactInfo"
+              value={formData.contactInfo}
+              onChange={handleChange}
+              className="customer-input"
+            />
+          </div>
+          <div className="customer-info">
+            <span>Purchase History:</span>
+            <input
+              type="text"
+              name="purchaseHistory"
+              value={formData.purchaseHistory}
+              onChange={handleChange}
+              className="customer-input"
+            />
+          </div>
+          <div className="customer-info">
+            <span>Segmentation Data:</span>
+            <input
+              type="text"
+              name="segmentationData"
+              value={formData.segmentationData}
+              onChange={handleChange}
+              className="customer-input"
+            />
+          </div>
+          <button onClick={handleSaveClick} className="customer-button">Save</button>
         </div>
       ) : (
         <div>
@@ -124,8 +141,38 @@ const Customers = ({ id }) => {
           <div className="customer-info">
             <span>Segmentation Data:</span> {customer.segmentationData}
           </div>
-          <button onClick={handleEditClick}>Edit</button>
-          <button onClick={handleDeleteClick}>Delete</button>
+          {customer.salesOpportunities.length > 0 && (
+            <div className="sales-opportunities">
+              <span>Sales Opportunities:</span>
+              <ul>
+                {customer.salesOpportunities.map(opportunity => (
+                  <li key={opportunity.opportunityId}>
+                    <span>Opportunity ID:</span> {opportunity.opportunityId}, 
+                    <span> Closing Date:</span> {opportunity.closingDate}, 
+                    <span> Estimated Value:</span> {opportunity.estimatedValue}, 
+                    <span> Sales Stage:</span> {opportunity.salesStage}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {customer.supportTickets.length > 0 && (
+            <div className="support-tickets">
+              <span>Support Tickets:</span>
+              <ul>
+                {customer.supportTickets.map(ticket => (
+                  <li key={ticket.ticketId}>
+                    <span>Ticket ID:</span> {ticket.ticketId}, 
+                    <span> Assigned Agent:</span> {ticket.assignedAgent}, 
+                    <span> Issue Description:</span> {ticket.issueDescription}, 
+                    <span> Status:</span> {ticket.status}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <button onClick={handleEditClick} className="customer-button">Edit</button>
+          <button onClick={handleDeleteClick} className="customer-button">Delete</button>
         </div>
       )}
     </div>

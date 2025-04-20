@@ -3,7 +3,7 @@ import axios from 'axios';
 import Cookies from 'universal-cookie';
 import Customers from './Customers';
 import AddCustomer from './AddCustomer';
-import '../styles/AllCustomers.css';
+import '../../styles/AllCustomers.css';
 
 const AllCustomers = () => {
   const [customers, setCustomers] = useState([]);
