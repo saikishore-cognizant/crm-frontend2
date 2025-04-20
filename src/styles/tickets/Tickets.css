@@ -1,0 +1,52 @@
+/* Tickets.css */
+.all-tickets-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .header form {
+    display: flex;
+  }
+  
+  .header input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .header button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .header button:hover {
+    background-color: #0056b3;
+  }
+  
+  .ticket-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .ticket-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .ticket-name {
+    font-weight: bold;
+  }
+  

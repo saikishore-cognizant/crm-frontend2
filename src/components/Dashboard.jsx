@@ -4,6 +4,7 @@ import AllCustomers from './customers/AllCustomers';
 import About from './About';
 import Navbar from './Navbar';
 import Sales from './sales/Sales';
+import Tickets from './tickets/Tickets';
 
 const Dashboard = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -21,7 +22,7 @@ const Dashboard = () => {
           <div className="inner-content">
             {activeSection === 'AllCustomers' && <AllCustomers />}
             {activeSection === 'Sales' && <div><Sales/> </div>}
-            {activeSection === 'Tickets' && <div>Tickets Section</div>}
+            {activeSection === 'Tickets' && <div><Tickets/></div>}
             {activeSection === 'Campaigns' && <div>Campaigns Section</div>}
             {activeSection === 'Reports' && <div>Reports Section</div>}
             {!activeSection && <About />}
