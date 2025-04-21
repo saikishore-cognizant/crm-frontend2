@@ -17,8 +17,8 @@ const Dashboard = () => {
 
   return (
     <>
-      <Navbar handleSectionChange={handleSectionChange} />
       <div className="dashboard-container">
+      <Navbar handleSectionChange={handleSectionChange} />
         <div className="content">
           <h1>This Customer Relationship Management (CRM) system</h1>
           <div className="inner-content">

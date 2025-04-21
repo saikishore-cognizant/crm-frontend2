@@ -1,7 +1,8 @@
 .dashboard-container {
   display: flex;
+  flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .content {
@@ -11,9 +12,10 @@
 
 .inner-content {
   padding: 5px;
-  background-color: #3498db;
+  border-radius: 5px;
+  background-color: #57B4BA; /* Updated background color */
   overflow: auto;
-  height: 500px;
+  height: 400px;
   width: 100%;
   box-sizing: border-box; /* Ensure padding doesn't affect width */
 }

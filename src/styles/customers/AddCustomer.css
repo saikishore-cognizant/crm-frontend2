@@ -1,36 +1,43 @@
+/* AddCustomer.css */
 .add-customer-container {
-  padding: 20px;
-  background-color: #1c1c1c; /* Dark background */
-  border: 1px solid #444; /* Dark border */
-  border-radius: 5px;
   max-width: 600px;
   margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .add-customer-container h1 {
-  color: #9b59b6; /* Dark purple */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-customer-container form {
+  display: flex;
+  flex-direction: column;
 }
 
 .add-customer-container input {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 10px;
-  border: 1px solid #444; /* Dark border */
-  border-radius: 5px;
-  background-color: #333; /* Dark input background */
-  color: #ecf0f1; /* Light text color */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .add-customer-container button {
-  padding: 10px;
-  background-color: #9b59b6; /* Dark purple */
+  padding: 10px 15px;
+  background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
-  box-shadow: 0 0 10px #9b59b6; /* Glowing effect */
+  transition: background-color 0.3s ease;
 }
 
 .add-customer-container button:hover {
-  background-color: #8e44ad; /* Darker purple */
-  box-shadow: 0 0 20px #9b59b6; /* Stronger glowing effect */
+  background-color: #0056b3;
 }

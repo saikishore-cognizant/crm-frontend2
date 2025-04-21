@@ -1,29 +1,60 @@
-/* styles.css */
+
 .customer-container {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  .customer-header {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .customer-info {
-    margin-bottom: 15px;
-  }
-  
-  .customer-info span {
-    font-weight: bold;
-  }
-  
-  .sales-opportunities, .support-tickets {
-    margin-top: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.customer-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.customer-info {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.customer-info span {
+  font-weight: bold;
+}
+
+.customer-container input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.customer-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+/* .customer-container button:hover {
+  background-color: #0056b3;
+} */
+
+.sales-opportunities, .support-tickets {
+  margin-top: 15px;
   }
   
   .sales-opportunities ul, .support-tickets ul {
@@ -33,11 +64,13 @@
   
   .sales-opportunities li, .support-tickets li {
     background-color: #e0f7fa;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 8px;
+    padding: 8px;
     border-radius: 5px;
   }
   
   .sales-opportunities li span, .support-tickets li span {
     font-weight: bold;
-  }  
+    font-size: 14px;
+  }
+  

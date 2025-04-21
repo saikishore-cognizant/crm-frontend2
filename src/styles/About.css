@@ -1,24 +1,23 @@
 .about-container {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .about-container h1 {
-    color: #2c3e50;
-  }
-  
-  .about-container p {
-    color: #34495e;
-  }
-  
-  .about-container ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  .about-container li {
-    color: #34495e;
-  }
-  
+  padding: 20px;
+  background-color: #FDFBEE; /* Updated background color */
+  border: 1px solid #57B4BA; /* Updated border color */
+  border-radius: 5px;
+}
+
+.about-container h1 {
+  color: #015551; /* Updated text color */
+}
+
+.about-container p {
+  color: #34495e; /* Keeping the same color */
+}
+
+.about-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.about-container li {
+  color: #34495e; /* Keeping the same color */
+}
